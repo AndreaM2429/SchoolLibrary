@@ -46,11 +46,36 @@
   </ul>
 </details>
 
+<details>
+<summary>Decorator pattern</summary>
+  <ul>
+    <li>
+      <a href="https://refactoring.guru/design-patterns/decorator">What it is?</a>
+    </li>
+    <li>
+      <a href="https://refactoring.guru/design-patterns/decorator/ruby/example#example-0">Decorator in Ruby</a>
+    </li>
+  </ul>
+</details>
+
+
 ### Key Features <a name="key-features"></a>
 
-- **Classes `person`, `student` and `teacher`**
+- **Classes `Person`, `Student`, `Teacher`, `Nameable`, `Decorator`, `CapitalizeDecorator` and `TrimmerDecorator`**
+
 - **The `student` and `teacher` classes have Inheritance from `person`**
+
 - **Private methods**
+
+- **Use decorator pattern**
+
+- **`Person` and `Decorator` inherits from `Nameable`**
+
+- **`CapitalizeDecorator` and `TrimmerDecorator` inherits from `Decorator`**
+
+- **`CapitalizeDecorator` capitalize the name**
+
+- **`TrimmerDecorator` trim the word at maximun of 10 characters**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -77,7 +102,7 @@ Clone this repository to your desired folder:
 To run the project, execute the command `ruby name_file.rb`. Example:
 
 ```sh
-  ruby person.rb
+  ruby test_decorator.rb
 ```
 
 To check the linters you can use the command:
@@ -106,8 +131,6 @@ To fix the linter use:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Use the "Decorator".**
-- [ ] **Design pattern.**
 - [ ] **Set up associations.**
 - [ ] **Add basic UI.**
 - [ ] **Preserve data.**
