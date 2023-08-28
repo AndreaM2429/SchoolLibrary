@@ -10,7 +10,3 @@ class Teacher < Person
     true
   end
 end
-
-teacher1 = Teacher.new(12, 'Math')
-p 'CLASS TRACHER'
-p teacher1.can_use_services?
