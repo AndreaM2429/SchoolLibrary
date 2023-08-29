@@ -44,9 +44,6 @@ p 'TEST FOR BOOK AND RENTAL RELATION'
 
 book1 = Book.new('title 1', 'Author 1')
 
-rental1 = Rental.new('20-08-2022', book1, person1)
-rental2 = Rental.new('24-07-2023', book1, person1)
-
 book1.new_rental(person1, '20-08-2022')
 book1.new_rental(person2, '24-07-2023')
 
