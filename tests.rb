@@ -21,6 +21,8 @@ puts capitalized_trimmed_person.correct_name
 
 p 'TEST FOR CLASSROOM AND STUDENT RELATION'
 
+person2 = Person.new(19, 'Marco')
+
 student = Student.new(18, 3, 'Andrea')
 student2 = Student.new(18, 3, 'Oscar')
 
@@ -45,21 +47,19 @@ book1 = Book.new('title 1', 'Author 1')
 rental1 = Rental.new('20-08-2022', book1, person1)
 rental2 = Rental.new('24-07-2023', book1, person1)
 
-book1.new_rental(rental1)
-book1.new_rental(rental2)
+book1.new_rental(person1, '20-08-2022')
+book1.new_rental(person2, '24-07-2023')
 
-p book1.book_rentals.count
+p book1.rentals.count
 
 # TEST FOR PERSON AND RENTAL RELATION
 
 p 'TEST FOR PERSON AND RENTAL RELATION'
 
-person2 = Person.new(19, 'Marco')
+person2.add_rental(book1, '24-07-2023')
+person2.add_rental(book1, '20-08-2022')
+person1.add_rental(book1, '24-07-2022')
 
-person2.add_rental(rental1)
-person2.add_rental(rental2)
-person1.add_rental(rental1)
+p person2.rentals.count
 
-p person2.person_rentals.count
-
-p rental1.person
+p book1.rentals
