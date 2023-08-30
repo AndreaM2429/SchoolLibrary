@@ -116,6 +116,12 @@ To run the project, execute the command `ruby name_file.rb`. Example:
   ruby tests.rb
 ```
 
+To run the app in the basic console UI, execute the command:
+
+```sh
+  ruby main.rb
+```
+
 To check the linters you can use the command:
 
 ```sh
