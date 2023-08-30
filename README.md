@@ -77,6 +77,12 @@
 
 - **`TrimmerDecorator` trim the word at maximun of 10 characters**
 
+- **The `app.rb` serve as the console app entry-point**
+
+- **Basic UI when you run the `main.rb`file**
+
+- **`main.rb` define the entry point**
+
 - **Associations:**
   - **has-many/belongs-to relationship between `Classroom` and `Student`**
   - **has-many/belongs-to relationship between `Book` and `Rental`**
@@ -136,7 +142,6 @@ To fix the linter use:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add basic UI.**
 - [ ] **Preserve data.**
 - [ ] **Unit tests.**
 
