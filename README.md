@@ -61,7 +61,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Classes `Person`, `Student`, `Teacher`, `Nameable`, `Decorator`, `CapitalizeDecorator` and `TrimmerDecorator`**
+- **Classes `Person`, `Student`, `Teacher`, `Nameable`, `Decorator`, `CapitalizeDecorator`, `TrimmerDecorator`, `Classroom`, `Student`, `Book` and `Rental`**
 
 - **The `student` and `teacher` classes have Inheritance from `person`**
 
@@ -76,6 +76,11 @@
 - **`CapitalizeDecorator` capitalize the name**
 
 - **`TrimmerDecorator` trim the word at maximun of 10 characters**
+
+- **Associations:**
+  - **has-many/belongs-to relationship between `Classroom` and `Student`**
+  - **has-many/belongs-to relationship between `Book` and `Rental`**
+  - **has-many/belongs-to relationship between `Person` and `Rental`**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,7 +107,7 @@ Clone this repository to your desired folder:
 To run the project, execute the command `ruby name_file.rb`. Example:
 
 ```sh
-  ruby test_decorator.rb
+  ruby tests.rb
 ```
 
 To check the linters you can use the command:
@@ -131,7 +136,6 @@ To fix the linter use:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Set up associations.**
 - [ ] **Add basic UI.**
 - [ ] **Preserve data.**
 - [ ] **Unit tests.**
