@@ -77,6 +77,12 @@
 
 - **`TrimmerDecorator` trim the word at maximun of 10 characters**
 
+- **The `app.rb` serve as the console app entry-point**
+
+- **Basic UI when you run the `main.rb`file**
+
+- **`main.rb` define the entry point**
+
 - **Associations:**
   - **has-many/belongs-to relationship between `Classroom` and `Student`**
   - **has-many/belongs-to relationship between `Book` and `Rental`**
@@ -110,6 +116,12 @@ To run the project, execute the command `ruby name_file.rb`. Example:
   ruby tests.rb
 ```
 
+To run the app in the basic console UI, execute the command:
+
+```sh
+  ruby main.rb
+```
+
 To check the linters you can use the command:
 
 ```sh
@@ -136,7 +148,6 @@ To fix the linter use:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add basic UI.**
 - [ ] **Preserve data.**
 - [ ] **Unit tests.**
 
