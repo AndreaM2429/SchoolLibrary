@@ -5,7 +5,7 @@ class Main
   def initialize
     @app = App.new
   end
-  
+
   def start
     puts "Welcome to School Library App ◦°˚ヽ(•◡•)ノ˚°◦\n\n"
     loop do
