@@ -10,9 +10,9 @@ class Choose
 
   def choose
     puts "\nPlease choose an option by enter a number"
-    @mwnu.each { |key, element| puts "#{key} - #{element.capitalize.gsub '_', ' '}" }
+    @menu.each { |key, element| puts "#{key} - #{element.capitalize.gsub '_', ' '}" }
     print "\nYour option: "
-    action = MENU[gets.chomp]
+    action = @menu[gets.chomp]
     if action
       action
     else
