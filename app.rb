@@ -33,7 +33,7 @@ class App
   end
 
   def create_a_person
-    print 'Do you want to create a student (1) o a Teahcer (2)? [Input the number]: '
+    print 'Do you want to create a Student (1) or a Teacher (2)? [Input the number]: '
     option = gets.chomp.to_i
 
     case option
