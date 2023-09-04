@@ -139,17 +139,24 @@ To fix the linter use:
 ## 👥 Author <a name="authors"></a>
 
 👤 **Andrea Manuel**
-
 - GitHub: [@AndreaM2429](https://github.com/AndreaM2429)
 - Twitter: [@AndreaManuelOr1](https://twitter.com/AndreaManuelOr1)
 - LinkedIn: [Andrea Manuel](https://www.linkedin.com/in/andreamanuel24/)
+
+👤 **Nicolas Bolañez**
+- GitHub: [@Zven94](https://github.com/Zven94)
+- LinkedIn: [Nicolas Bolañez](https://www.linkedin.com/in/nicolas-emiliano/)
+
+👤 **Javier Grau**
+- GitHub: [@grauJavier](https://github.com/Luffytaro22)
+- LinkedIn: [Javier Grau](https://www.linkedin.com/in/javiergrau)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Preserve data.**
-- [ ] **Unit tests.**
+- [ ] **Preserve data:** Students will work on data persistence, ensuring that the records are preserved even after the program is closed.
+- [ ] **Unit tests:** The final project involves creating unit tests to ensure the functionality and robustness of the app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

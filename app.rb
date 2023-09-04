@@ -33,15 +33,19 @@ class App
   end
 
   def create_a_person
-    print 'Do you want to create a student (1) o a Teahcer (2)? [Input the number]: '
+    print 'Do you want to create a Student (1) or a Teacher (2)? [Input the number]: '
     option = gets.chomp.to_i
+    print 'Age: '
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
 
     case option
     when 1
-      create_student
+      create_student(age, name)
       puts 'Student created successfully'
     when 2
-      create_teacher
+      create_teacher(age, name)
       puts 'Teacher created successfully'
     else
       puts 'Incorrect option, try again'
@@ -49,13 +53,7 @@ class App
     end
   end
 
-  def create_student
-    print 'Age: '
-    age = gets.chomp.to_i
-
-    print 'Name: '
-    name = gets.chomp
-
+  def create_student(age, name)
     print 'Classroom: '
     classroom = gets.chomp
     Classroom.new(classroom)
@@ -66,13 +64,7 @@ class App
     @people.push(Student.new(age, classroom, name, parent_permission: permission))
   end
 
-  def create_teacher
-    print 'Age: '
-    age = gets.chomp.to_i
-
-    print 'Name: '
-    name = gets.chomp
-
+  def create_teacher(age, name)
     print 'Specialization: '
     specialization = gets.chomp
 
