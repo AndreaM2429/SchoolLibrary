@@ -3,13 +3,13 @@ require_relative 'choose'
 
 class Main
   def initialize
-    @choose = Choose.new.choose
     @app = App.new
   end
-
+  
   def start
     puts "Welcome to School Library App ◦°˚ヽ(•◡•)ノ˚°◦\n\n"
     loop do
+      @choose = Choose.new.choose
       @app.send(@choose)
     end
   end
