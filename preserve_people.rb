@@ -9,10 +9,11 @@ class PreservePeople
     data_hash = JSON.parse(file)
     data_hash.each do |person|
       if person['class'] == 'Student'
+
         saved_people << Student.new(person['age'], person['classroom'], person['name'],
-                                    parent_permission: person['parent_permission'])
+                                    person['id'], parent_permission: person['parent_permission'])
       elsif person['class'] == 'Teacher'
-        saved_people << Teacher.new(person['age'], person['specialization'], person['name'])
+        saved_people << Teacher.new(person['age'], person['specialization'], person['name'], person['id'])
       end
     end
     saved_people

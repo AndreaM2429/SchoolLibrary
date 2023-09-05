@@ -1,1 +1,1 @@
-[{"age":35,"classroom":"3e","name":"Javi","parent_permission":true,"class":"Student","id":989,"rentals":[]}]
+[{"age":35,"classroom":"3e","name":"Javi","parent_permission":true,"class":"Student","id":461,"rentals":["#<Rental:0x00007f4e74af9190>","#<Rental:0x00007f4e74af9078>"]},{"age":23,"specialization":"math","name":"Nico","class":"Teacher","id":202,"rentals":["#<Rental:0x00007f4e74af9000>"]}]

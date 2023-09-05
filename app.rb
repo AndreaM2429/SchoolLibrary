@@ -5,6 +5,7 @@ require_relative 'teacher'
 require_relative 'rental'
 require_relative 'preserve_books'
 require_relative 'preserve_people'
+require_relative 'preserve_rentals'
 
 class App
   attr_accessor :people, :books, :rentals
@@ -12,7 +13,7 @@ class App
   def initialize
     @people = PreservePeople.new.gets_people || []
     @books = PreserveBooks.new.gets_books || []
-    @rentals = []
+    @rentals = PreserveRentals.new.gets_rentals(@people, @books) || []
   end
 
   def list_all_books
@@ -63,14 +64,14 @@ class App
     print 'Parent permission [y/n]: '
     permission = gets.chomp.downcase == 'y'
 
-    @people.push(Student.new(age, classroom, name, parent_permission: permission))
+    @people.push(Student.new(age, classroom, name, '', parent_permission: permission))
   end
 
   def create_teacher(age, name)
     print 'Specialization: '
     specialization = gets.chomp
 
-    @people.push(Teacher.new(age, specialization, name))
+    @people.push(Teacher.new(age, specialization, name, ''))
   end
 
   def create_a_book
@@ -95,7 +96,6 @@ class App
     date = gets.chomp
 
     @rentals.push(Rental.new(date, @books[book_idx], @people[person_idx]))
-    p @rentals
 
     puts 'Rental created successfully'
   end
@@ -113,6 +113,7 @@ class App
   def end_app
     PreserveBooks.new.save_books(@books)
     PreservePeople.new.save_people(@people)
+    PreserveRentals.new.save_rentals(@rentals)
     puts 'Thank you for using this app (•◡•)丿'
     exit
   end
