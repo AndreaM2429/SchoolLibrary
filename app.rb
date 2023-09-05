@@ -10,7 +10,7 @@ class App
 
   def initialize
     @people = []
-    @books = PreserveBooks.new.get_books || []
+    @books = PreserveBooks.new.gets_books || []
     @rentals = []
   end
 
