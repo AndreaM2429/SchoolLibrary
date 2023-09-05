@@ -4,12 +4,13 @@ require_relative 'classroom'
 require_relative 'teacher'
 require_relative 'rental'
 require_relative 'preserve_books'
+require_relative 'preserve_people'
 
 class App
   attr_accessor :people, :books, :rentals
 
   def initialize
-    @people = []
+    @people = PreservePeople.new.gets_people || []
     @books = PreserveBooks.new.gets_books || []
     @rentals = []
   end
@@ -111,6 +112,7 @@ class App
 
   def end_app
     PreserveBooks.new.save_books(@books)
+    PreservePeople.new.save_people(@people)
     puts 'Thank you for using this app (•◡•)丿'
     exit
   end
