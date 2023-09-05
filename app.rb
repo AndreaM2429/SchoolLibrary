@@ -64,14 +64,14 @@ class App
     print 'Parent permission [y/n]: '
     permission = gets.chomp.downcase == 'y'
 
-    @people.push(Student.new(age, classroom, name, '', parent_permission: permission))
+    @people.push(Student.new(age, classroom, '', name, parent_permission: permission))
   end
 
   def create_teacher(age, name)
     print 'Specialization: '
     specialization = gets.chomp
 
-    @people.push(Teacher.new(age, specialization, name, ''))
+    @people.push(Teacher.new(age, specialization, '', name))
   end
 
   def create_a_book

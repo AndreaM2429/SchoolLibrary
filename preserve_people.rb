@@ -10,10 +10,10 @@ class PreservePeople
     data_hash.each do |person|
       if person['class'] == 'Student'
 
-        saved_people << Student.new(person['age'], person['classroom'], person['name'],
-                                    person['id'], parent_permission: person['parent_permission'])
+        saved_people << Student.new(person['age'], person['classroom'], person['id'],
+                                    person['name'], parent_permission: person['parent_permission'])
       elsif person['class'] == 'Teacher'
-        saved_people << Teacher.new(person['age'], person['specialization'], person['name'], person['id'])
+        saved_people << Teacher.new(person['age'], person['specialization'], person['id'], person['name'])
       end
     end
     saved_people
