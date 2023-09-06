@@ -2,12 +2,12 @@ require_relative '../classroom'
 require_relative '../student'
 
 describe Classroom do
-  it "Create a new Classroom class object" do
+  it 'Create a new Classroom class object' do
     classroom = Classroom.new('8160901')
     expect(classroom.class).to eq Classroom
   end
 
-  it "Create a classroom and add a student" do
+  it 'Create a classroom and add a student' do
     classroom101 = Classroom.new('8160101')
     student = Student.new(19, classroom101, '', 'Catalina')
 

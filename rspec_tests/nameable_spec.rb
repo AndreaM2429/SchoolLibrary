@@ -1,4 +1,4 @@
-require '../nameable'
+require_relative '../nameable'
 
 describe Nameable do
   let(:nameable) { Nameable.new }
